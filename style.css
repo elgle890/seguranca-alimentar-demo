@@ -1,0 +1,643 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.menu-toggle {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #081b29;
+    color: #fff;
+    position: static;
+ 
+}
+
+
+header h2{
+    padding: 15px 0 20px 20px;
+    padding-left: 7vw;
+}
+
+header button{
+    height: 40px;
+    width: 160px;
+    border: none;
+    border-radius: 20px;
+    margin: 13px 30px 0 0 ;
+    cursor: pointer;
+    background: #008bc3;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    transition: transform 0.3s ease, scale 0.3s ease;
+  
+}
+
+
+nav{
+    background-color: #081b29;
+    display: flex;
+    align-items: center;
+    
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    opacity: 0.8;
+    padding-right: 50px;
+    transition: opacity 0.3s;
+    transition: color .5s;
+  
+}
+
+nav a:hover{
+    color: #00a2e2;
+    
+}
+
+
+nav #a-1{
+    opacity: 1  ;
+}
+
+nav a:hover{
+    opacity: 1;
+}
+
+
+button:hover {
+    transform: scale(1.1);
+ }
+     
+input:focus {
+    outline: none;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+
+    background-color: #10334b;
+    color: white;
+
+    padding: 32px;
+}
+
+
+.button-acao {
+    margin-bottom: 7%;
+    padding: 5px;
+    border: none;
+    width: 200px;
+    border-radius: 30px;
+    height: 12%;
+    cursor: pointer;
+    background: #008bc3;
+    color: white;
+    font-size: 14px;
+}
+
+.button-acao:hover{
+    opacity: .9;
+    transition: opacity .3s;
+    transition: transform 0.3s ease, scale 0.3s ease;
+}
+
+.button-acao:active{
+    opacity: .7;
+}
+
+.info img {
+    padding: 0 10vh 0 0;
+}
+
+.info p {
+    text-align: left;
+    font-size: 27px;
+    padding-top: 40px;
+
+}
+
+main {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+main h2 {
+    padding-left: 40%;
+    padding-bottom: 2%;
+}
+
+
+
+.itens-c img {
+    width: 50vw; 
+    height: 40vh;
+    padding-left: 1%;
+    
+}
+
+.elemento h3 {
+    padding-left: 3%;
+    padding-bottom: 2%;
+}
+
+.elemento p {
+    margin-left: 3%;
+    padding-right: 10%;
+}
+
+.itens-c {
+    display: flex;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 6%;
+}
+
+.cardapio {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    align-items:center ;
+    
+}
+
+.cardapio p {
+    text-align: center;
+    padding: 2% 5% 5% 5%;
+    font-size: 20px;
+}
+
+.funcionalidade {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-button {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.input-button input {
+    margin: 6px;
+    
+    
+}
+
+
+.input-button button {
+    margin-left: 10px;
+}
+
+
+.funcionalidade input{
+    width: 20vw;
+    height: 5vh;
+    border-radius: 5px;
+    background-color: rgb(244, 239, 239);
+    border: none;
+    text-align: left;
+    padding-left: 15px;
+    
+}
+
+.input-cardapio {
+    font-size: 50px;
+}
+
+
+
+.funcionalidade button {
+    width: 9vw;
+    height: 50px;
+    border: none;
+    background-color: #008bc3;
+    cursor: pointer;
+    border-radius: 30px;
+    color: white;
+  
+    transition: transform 0.3s ease, scale 0.3s ease;
+}
+
+.funcionalidade button:hover {
+   transform: scale(1.1);
+}
+
+.card img {
+    width: 20vw;
+    height: 20vh;
+    padding-top: 5%;
+}
+
+.card p{
+    font-size: 13px;
+    
+}
+
+
+
+.card {
+    text-align: center;
+    transition: transform 0.5s;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    width: 22vw;
+    margin: 20px;
+    background-color: #008bc3;
+    color: white;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.cards-cardapio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding-top: 4vh;
+    display: none;
+}
+
+.card button {
+    width: 15vw;
+    height: 5vh;
+    background-color: #081b29;
+}
+
+
+#mensagem-erro {
+    display: none;
+}
+
+
+.rotina {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #00a2e2;
+    color: white;
+    width: 35vw; 
+    margin-left: 33%; 
+    margin-top: 25px;
+    border-radius: 10px;
+    display: none;
+}
+
+.l {
+    width: 120%;
+    margin-right: 20px;
+}
+
+.rotina h2 {
+    padding-bottom: 5%;
+}
+
+.lista {
+    list-style: none;
+    padding: 0;
+    margin-right: 40px;
+}
+
+.lista li {
+    background-color: #0f2c3c; 
+    border-radius: 5px; 
+    margin-bottom: 10px; 
+    text-align: center; 
+}
+
+#ol-cafe-da-manha,
+#ol-almoco,
+#ol-janta {
+    margin-left: 0; 
+    padding-left: 20px; 
+    list-style-type: none; 
+}
+
+.lista h3 {
+    margin-bottom: 2px; 
+}
+
+#ol-cafe-da-manha li,
+#ol-almoco li,
+#ol-janta li {
+    display: flex;
+    align-items: center;
+}
+
+#ol-cafe-da-manha li::before,
+#ol-almoco li::before,
+#ol-janta li::before {
+    content: "\2022"; 
+    color: white; 
+    font-size: 1.5em; 
+    margin-right: 10px; 
+}
+
+footer {
+    background-color: rgb(0, 0, 48);
+    color: white;
+}
+
+
+@media screen  and (max-width: 640px) {
+    
+    body {
+        overflow-x: hidden;
+    }
+    
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header h2 {
+        padding: 0;
+        
+    }
+
+    nav {
+        flex-direction: column;
+        padding-left: 35px;
+    }
+
+    nav a {
+        padding-bottom: 10px;
+    }
+
+    .menu-toggle button {
+        margin-left: 10vw;
+        margin-bottom: 10px;
+        height: 5vh;
+    }
+
+
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        display: none;
+    }
+
+    .menu-hamburguer {
+        width: 40px;
+        cursor: pointer;
+    }
+    
+    .menu-hamburguer span {
+        height: 2.5px;
+        width: 100%;
+        background-color: white;
+        display: block;
+        margin-bottom: 4px;   
+    }
+
+
+    .itens-menu {
+        display: flex;
+        justify-content: space-between;
+
+        margin-bottom: 10px;
+        margin-top: 5px;
+    }
+
+    .itens-menu .menu-hamburguer {
+        margin-left: 40vw;
+        margin-top: 1.5vh;
+    }
+
+    .info img {
+        display: none;
+    }
+
+    
+    .info p {
+        font-size: 20px;
+        text-align: left;
+        align-self: center;
+        justify-self: center;
+        padding-bottom: 20%;
+    }
+
+    main h2 {
+        padding-left: 15%;
+    }
+
+    .elemento {
+        overflow: auto;
+    }
+    
+    .elemento img {
+        float: left;
+        width: 40%; 
+        height: 40vh;
+        
+    }
+
+    .itens-c {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .itens-c img {
+        width: 70%;
+        margin-bottom: 20px;
+    }
+
+
+    .texto {
+        align-items: center;
+        text-align: center;
+    }
+
+    .texto h3 {
+        margin-right: 3%;
+    }
+
+    .texto p {
+        margin-left: 40px;
+    }
+
+    .cards-cardapio {
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 0;
+    }
+
+    .cards-cardapio button {
+        width: 60%;
+        height: 10%;
+    }
+
+    .cards-cardapio img {
+        width: 55vw;
+    }
+
+    .card {
+        width: 70%;
+        margin-left: 15%;
+        
+    }
+
+    .rotina {
+        margin: 0 auto;
+        width: 70%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .input-button {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input-button button {
+        margin: 0;
+        width: 30vw;
+        height: 5vh;
+        margin-bottom: 20px;
+    }
+
+    .input-button input {
+        width: 40vw;
+        margin-bottom: 10px;
+    }
+     
+    
+}
+
+@media screen  and (min-width: 641px) and (max-width: 1024px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header h2 {
+        padding: 0;
+        
+    }
+
+    nav {
+        flex-direction: column;
+        padding-left: 35px;
+    }
+
+    nav a {
+        padding-bottom: 10px;
+    }
+
+    .menu-toggle button {
+        margin-left: 10vw;
+        margin-bottom: 10px;
+        height: 5vh;
+    }
+
+
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        display: none;
+    }
+
+    .menu-toggle button {
+        margin-left: 15%;
+        height: 3vh;
+    }
+
+    .menu-hamburguer {
+        width: 40px;
+        cursor: pointer;
+       
+    }
+
+    .itens-menu h2 {
+        padding-top: 7px;
+    }
+    
+    .menu-hamburguer span {
+        height: 2.5px;
+        width: 100%;
+        background-color: white;
+        display: block;
+        margin-bottom: 5px;   
+    }
+
+
+    .itens-menu {
+        display: flex;
+        justify-content: space-between;
+
+        margin-bottom: 10px;
+        margin-top: 5px;
+    }
+
+    .itens-menu .menu-hamburguer {
+        margin-left: 40vw;
+        margin-top: 1.5vh;
+    }
+
+    .info img {
+        display: none;
+    }
+
+    .info p {
+        text-align: center;
+        padding: 50px;
+    }
+
+    #input-cardapio {
+        height: 50px;
+        font-size: 120%;
+    }
+
+    .input-button button {
+        width: 40%;
+    }
+
+    .input-button  {
+        flex-direction: column;
+    }
+
+    .cards-cardapio {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0;
+    }
+
+    .cards-cardapio button {
+        width: 50%;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    
+}
